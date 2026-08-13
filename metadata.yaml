@@ -1,0 +1,22 @@
+name: rss_pusher
+desc: RSS订阅及自动推送插件
+version: 1.0.0
+author: AKer
+repo: https://github.com/AKer4632/astrbot-rss-pusher
+config:
+  check_interval:
+    type: int
+    default: 600
+    desc: 轮询间隔（秒）
+  max_summary_length:
+    type: int
+    default: 200
+    desc: 摘要最大长度
+  retention_days:
+    type: int
+    default: 7
+    desc: 消息记录保留天数
+  default_template:
+    type: str
+    default: "[RSS] {title}\n{link}\n{summary}"
+    desc: 默认推送模板
